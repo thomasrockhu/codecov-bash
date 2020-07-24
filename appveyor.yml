@@ -1,0 +1,7 @@
+build: false
+
+image:
+  - Visual Studio 2017
+
+test_script:
+  - curl -s https://codecov.io/bash | bash -s -- -f coverage.xml
