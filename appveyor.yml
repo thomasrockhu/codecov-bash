@@ -1,0 +1,8 @@
+build: false
+
+image:
+  - Visual Studio 2017
+
+test_script:
+  - env -i PATH="$PATH" tests/test
+  - curl -s https://codecov.io/bash | bash -s -- -s coverage
